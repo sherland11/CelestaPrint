@@ -1,0 +1,149 @@
+.typeOfWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.typeOfWork__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 90%;
+    color: #000;
+    min-height: 310px;
+}
+
+.typeOfWork__content {
+    min-width: 90%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    max-width: 100%;
+    min-height: 80px;
+}
+
+.accordion-body {
+    max-width: 1160px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.accordion-button {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    background-color: none;
+    color: #000;
+}
+
+.accordion {
+    --bs-accordion-active-bg: none;
+}
+
+.accordion-button {
+    background-color: none;
+    margin: 0;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    box-shadow: none;
+    background-color: none;
+    border: none;
+}
+
+.accordion-button.collapsed::after {
+    background: url("../img/plus_icon_white.svg");
+    background-size: 90%;
+    background-color: #fff352;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-position: center;
+    transform: rotate(0);
+    transition: background-color ease 400ms, transform ease 500ms;
+}
+
+.accordion-button.collapsed:hover::after {
+    background: url("../img/plus_icon.svg");
+    background-size: 90%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-position: center;
+    transform: rotate(0);
+    transition: background-color ease 400ms, transform ease 500ms;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url("../img/plus_icon_white.svg");
+    background-size: 90%;
+    background-color: #fff352;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-position: center;
+    transform: rotate(-45deg);
+    transition: background-color ease 400ms, transform ease 500ms;
+}
+
+.accordion-button:not(.collapsed):hover::after {
+    background: url("../img/plus_icon.svg");
+    background-size: 90%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-position: center;
+    transform: rotate(-45deg);
+    transition: background-color ease 400ms, transform ease 500ms;
+}
+
+.typeOfWork__order {
+    display: flex;
+    align-items: center;
+    min-width: 90%;
+    min-height: 300px;
+}
+
+.typeOfWork__button {
+    display: flex;
+    justify-content: center;
+}
+
+.typeOfWork__button button {
+    width: 300px;
+    min-height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #fff352;
+    border: none;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.typeOfWork__button button:hover {
+    box-shadow: 0 0 5px #cccccc;
+}
+
+@media (max-width:767px) {
+    .typeOfWork__button button {
+        width: 200px;
+    }
+}

@@ -1,0 +1,107 @@
+.example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    min-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.example__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 290px;
+    min-width: 90%;
+}
+
+.example__title a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.example__content {
+    width: 99%;
+}
+
+.example__content .col-8,
+.example__content .col-4 {
+    padding: 0 5px 10px 5px;
+}
+
+.example__modalBtn {
+    position: relative;
+	height: 0;
+}
+
+.example__modalBtn img {
+    cursor: pointer;
+}
+
+.example__modalBtn_65_percent {
+    padding-bottom: 66%;
+}
+
+.example__modalBtn_133_percent {
+    padding-bottom: 133%;
+}
+
+.example__modalBtn_image {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    object-fit:cover;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 0;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 20px;
+    opacity: 1;
+    z-index: 100000;
+}
+
+.example__modal_body_image {
+    height: 97%;
+    cursor: zoom-in;
+}
+
+.example__modal_body_zoom {
+    position: absolute;
+    right: 75px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.example__modal_body_chevron-left {
+    position: absolute;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.example__modal_body_chevron-right {
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+}
