@@ -17,7 +17,7 @@
 }
 
 .typeOfWork__content {
-    min-width: 90%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .accordion-body {
-    max-width: 1160px;
+    max-width: 100%;
     font-weight: 300;
     line-height: 22px;
 }

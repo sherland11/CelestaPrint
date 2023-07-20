@@ -23,7 +23,7 @@ export default function Example() {
                         <img src="images/example/1.jpg" alt="" onClick={() => setShowModal1(true)} className='example__modalBtn_image'/>    
                     </div>
                     <Modal show={showModal1} fullscreen={true} onHide={() => setShowModal1(false)}>
-                        <Example_modal image='images/example/1.jpg'></Example_modal>
+                        <Example_modal image='images/example/1.jpg' ownModal={setShowModal1} prevModal={setShowModal6} nextModal={setShowModal2}></Example_modal>
                     </Modal>
                 </Col>
 
@@ -32,7 +32,7 @@ export default function Example() {
                         <img src="images/example/2.jpg" alt="" onClick={() => setShowModal2(true)} className='example__modalBtn_image'/>    
                     </div>
                     <Modal show={showModal2} fullscreen={true} onHide={() => setShowModal2(false)}>
-                        <Example_modal image='images/example/2.jpg'></Example_modal>
+                        <Example_modal image='images/example/2.jpg' ownModal={setShowModal2} prevModal={setShowModal1} nextModal={setShowModal3}></Example_modal>
                     </Modal>
                 </Col>
 
@@ -41,7 +41,7 @@ export default function Example() {
                         <img src="images/example/3.jpg" alt="" onClick={() => setShowModal3(true)} className='example__modalBtn_image'/>    
                     </div>
                     <Modal show={showModal3} fullscreen={true} onHide={() => setShowModal3(false)}>
-                        <Example_modal image='images/example/3.jpg'></Example_modal>
+                        <Example_modal image='images/example/3.jpg' ownModal={setShowModal3} prevModal={setShowModal2} nextModal={setShowModal4}></Example_modal>
                     </Modal>
                 </Col>
 
@@ -50,7 +50,7 @@ export default function Example() {
                         <img src="images/example/4.jpg" alt="" onClick={() => setShowModal4(true)} className='example__modalBtn_image'/>    
                     </div>
                     <Modal show={showModal4} fullscreen={true} onHide={() => setShowModal4(false)}>
-                        <Example_modal image='images/example/4.jpg'></Example_modal>
+                        <Example_modal image='images/example/4.jpg' ownModal={setShowModal4} prevModal={setShowModal3} nextModal={setShowModal5}></Example_modal>
                     </Modal>
                 </Col>
 
@@ -59,7 +59,7 @@ export default function Example() {
                         <img src="images/example/5.jpg" alt="" onClick={() => setShowModal5(true)} className='example__modalBtn_image'/>    
                     </div>
                     <Modal show={showModal5} fullscreen={true} onHide={() => setShowModal5(false)}>
-                        <Example_modal image='images/example/5.jpg'></Example_modal>
+                        <Example_modal image='images/example/5.jpg' ownModal={setShowModal5} prevModal={setShowModal4} nextModal={setShowModal6}></Example_modal>
                     </Modal>
                 </Col>
 
@@ -68,7 +68,7 @@ export default function Example() {
                         <img src="images/example/6.jpg" alt="" onClick={() => setShowModal6(true)} className='example__modalBtn_image'/>    
                     </div>
                     <Modal show={showModal6} fullscreen={true} onHide={() => setShowModal6(false)}>
-                        <Example_modal image='images/example/6.jpg'></Example_modal>
+                        <Example_modal image='images/example/6.jpg' ownModal={setShowModal6} prevModal={setShowModal5} nextModal={setShowModal1}></Example_modal>
                     </Modal>
                 </Col>
 

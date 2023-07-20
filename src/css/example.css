@@ -75,7 +75,9 @@
     right: 20px;
     top: 20px;
     background-size: 20px;
+    background-position: center;
     opacity: 1;
+    --bs-btn-close-focus-shadow: none;
     z-index: 100000;
 }
 
@@ -85,23 +87,50 @@
 }
 
 .example__modal_body_zoom {
-    position: absolute;
+    position:fixed;
     right: 75px;
     top: 20px;
     width: 20px;
     height: 20px;
+    cursor: zoom-in;
+    z-index: 1000000;
 }
 
-.example__modal_body_chevron-left {
-    position: absolute;
-    left: 15px;
-    width: 25px;
-    height: 25px;
+.example__chevron-left-container {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.example__modal_body_chevron-right {
-    position: absolute;
-    right: 15px;
+.example__chevron-right-container {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+
+}
+
+
+.example__chevron-left {
     width: 25px;
     height: 25px;
+    margin-left: 15px;
+}
+
+.example__chevron-right {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.image-scale {
+    transform: scale(2);
 }
