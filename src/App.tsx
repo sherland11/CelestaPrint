@@ -7,11 +7,13 @@ import './css/products_icons.css';
 import './css/typeOfWork.css';
 import './css/conditions.css';
 import './css/example.css';
+import './css/clients.css';
 import Header from './components/Header';
 import Products from './components/Products';
 import TypeOfWork from './components/TypesOfWork';
 import Conditions from './components/Conditions';
 import Example from './components/Example';
+import Clients from './components/Clients';
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <TypeOfWork></TypeOfWork>
       <Conditions></Conditions>
       <Example></Example>
+      <Clients></Clients>
     </div>
   );
 }
