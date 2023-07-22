@@ -1,0 +1,10 @@
+.clients {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 90%;
+    color: #000000;
+}
+
+.clients__title {
+    margin-bottom: 105px;
+}
+
