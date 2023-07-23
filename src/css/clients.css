@@ -2,9 +2,21 @@
     font-family: 'Open Sans', sans-serif;
     max-width: 90%;
     color: #000000;
+    margin-bottom: 150px;
 }
 
 .clients__title {
     margin-bottom: 105px;
 }
 
+.clients__logo {
+    border-right: 1px solid #bebebe;
+}
+
+.clients__logo:last-child {
+    border-right: none;
+}
+
+.clients__logo img {
+    width: 100%;
+}

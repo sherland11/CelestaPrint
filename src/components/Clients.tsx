@@ -8,13 +8,13 @@ export default function Clients() {
                 <Col sm='12' className="caption">НАШИ КЛИЕНТЫ</Col>
             </Row>
 
-            <Row className="clients__logo">
-                <Col sm='2'><img src="images/clients-logo/1.jpg" alt="Crop and Highlight"/></Col>
-                <Col sm='2'><img src="images/clients-logo/2.jpg" alt="N"/></Col>
-                <Col sm='2'><img src="images/clients-logo/3.jpg" alt="Miiissy"/></Col>
-                <Col sm='2'><img src="images/clients-logo/4.jpg" alt="Peppermint"/></Col>
-                <Col sm='2'><img src="images/clients-logo/5.jpg" alt="Pixel Labs"/></Col>
-                <Col sm='2'><img src="images/clients-logo/6.jpg" alt="Marnie"/></Col>
+            <Row className="clients__content">
+                <Col sm='2' className="clients__logo"><img src="images/clients-logo/1.jpg" alt="Crop and Highlight"/></Col>
+                <Col sm='2' className="clients__logo"><img src="images/clients-logo/2.jpg" alt="N"/></Col>
+                <Col sm='2' className="clients__logo"><img src="images/clients-logo/3.jpg" alt="Miiissy"/></Col>
+                <Col sm='2' className="clients__logo"><img src="images/clients-logo/4.jpg" alt="Peppermint"/></Col>
+                <Col sm='2' className="clients__logo"><img src="images/clients-logo/5.jpg" alt="Pixel Labs"/></Col>
+                <Col sm='2' className="clients__logo"><img src="images/clients-logo/6.jpg" alt="Marnie"/></Col>
             </Row>
         </Container>
     )
