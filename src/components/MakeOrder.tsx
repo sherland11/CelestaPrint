@@ -21,8 +21,28 @@ export default function MakeOrder() {
                         <Form.Group>
                             <Form.Control as="textarea" rows={1} placeholder="Комментарий к заказу" />
                         </Form.Group>
-                        <Form.Group></Form.Group>
-                        <Form.Group></Form.Group>
+                        <Form.Group>
+                            <Form.Label>Загрузите файл</Form.Label>
+                            <Form.Control as="button">загрузить файл</Form.Control>
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.Label>Доставка заказа</Form.Label>
+                            <Form.Check 
+                                type="radio"
+                                label="Доставка"
+                                name="deliveryRadio"
+                            />
+                            <Form.Check 
+                                type="radio"
+                                label="Доставка"
+                                name="deliveryRadio"
+                            />
+                            <Form.Check 
+                                type="radio"
+                                label="Доставка"
+                                name="deliveryRadio"
+                            />
+                        </Form.Group>
                         <Button type="submit">Submit</Button>
                     </Form>
                 </Col>

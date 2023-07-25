@@ -26,4 +26,16 @@ textarea {
     height: 60px;
     resize: none;
     border-radius: 0;
+    margin-bottom: 25px;
+    border-color: #ffffff;
+}
+
+.form-control[type="text"]:focus,
+.form-control[type="email"]:focus,
+textarea:focus {
+    box-shadow: none;
+    border-color: #ffffff;
+}
+textarea {
+    line-height: 40px !important;
 }
