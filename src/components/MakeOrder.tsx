@@ -22,28 +22,30 @@ export default function MakeOrder() {
                             <Form.Control as="textarea" rows={1} placeholder="Комментарий к заказу" />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Label>Загрузите файл</Form.Label>
-                            <Form.Control as="button">загрузить файл</Form.Control>
+                            <Form.Label className="mb-3">Загрузите файл</Form.Label>
+                            <Form.Control as="button" type="button" className="makeOrder__file-btn">загрузить файл</Form.Control>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Label>Доставка заказа</Form.Label>
+                            <Form.Label className="mb-4">Доставка заказа</Form.Label>
                             <Form.Check 
                                 type="radio"
-                                label="Доставка"
+                                label="Без доставки"
                                 name="deliveryRadio"
+                                className="mb-1"
                             />
                             <Form.Check 
                                 type="radio"
-                                label="Доставка"
+                                label="Доставка внутри МКАД (400р) = 400"
                                 name="deliveryRadio"
+                                className="mb-1"
                             />
                             <Form.Check 
                                 type="radio"
-                                label="Доставка"
+                                label="Доставка за пределы МКАД (600р) = 600"
                                 name="deliveryRadio"
                             />
                         </Form.Group>
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" className="makeOrder__submit">Сделать заказ</Button>
                     </Form>
                 </Col>
             </Row>
