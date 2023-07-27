@@ -9,6 +9,7 @@ import './css/conditions.css';
 import './css/example.css';
 import './css/clients.css';
 import './css/makeOrder.css';
+import './css/map.css';
 import Header from './components/Header';
 import Products from './components/Products';
 import TypeOfWork from './components/TypesOfWork';
@@ -16,6 +17,7 @@ import Conditions from './components/Conditions';
 import Example from './components/Example';
 import Clients from './components/Clients';
 import MakeOrder from './components/MakeOrder';
+import Map from './components/Map';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
       <Example></Example>
       <Clients></Clients>
       <MakeOrder></MakeOrder>
+      <Map></Map>
     </div>
   );
 }
