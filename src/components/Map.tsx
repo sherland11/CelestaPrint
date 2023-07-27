@@ -16,7 +16,7 @@ export default function Map() {
     return (
         <Container className="map">
             <Row className="map__content">
-                <Col sm="12" className="map__yandex-map"></Col>
+                <Col sm="12" className="map__yandex-map" id="map__yandex-map"></Col>
             </Row>
         </Container>
     )
