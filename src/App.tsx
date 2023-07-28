@@ -10,6 +10,7 @@ import './css/example.css';
 import './css/clients.css';
 import './css/makeOrder.css';
 import './css/map.css';
+import './css/footer.css';
 import Header from './components/Header';
 import Products from './components/Products';
 import TypeOfWork from './components/TypesOfWork';
@@ -18,6 +19,7 @@ import Example from './components/Example';
 import Clients from './components/Clients';
 import MakeOrder from './components/MakeOrder';
 import Map from './components/Map';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
       <Clients></Clients>
       <MakeOrder></MakeOrder>
       <Map></Map>
+      <Footer></Footer>
     </div>
   );
 }
