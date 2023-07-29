@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 100vw;
+    min-width: 100%;
     background-color: #fff352;
     font-family: 'Open Sans', sans-serif;
     color: #000000;
@@ -10,13 +10,50 @@
 }
 
 .makeOrder__title {
-    max-width: 90%;
+    width: 90%;
     margin: 210px 0 90px 0;
 }
 
 .makeOrder__title .desc {
     line-height: 20px;
 }
+
+.my-form
+{
+    max-width: 90%;
+    height: 200px;
+}
+.input-group
+{
+    position: relative;
+}
+.my-input
+{
+    width: 90%;
+    height: 60px;
+    padding: 15px 10px 0 10px;
+    outline: none;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+}
+.my-placeholder
+{
+    position: absolute;
+    top: 23px;
+    left: 10px;
+    font-size: 16px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s ease-out;
+    pointer-events: none;
+}
+
+.my-input:focus + .my-placeholder
+{
+    font-size: 10px;
+    top: 10px;
+}
+
 
 .makeOrder__form {
     width: 90%;

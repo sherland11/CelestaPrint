@@ -11,6 +11,12 @@ export default function MakeOrder() {
 
             <Row className="makeOrder__form">
                 <Col sm="12">
+                    <form className="my-form">
+                        <div className="input-group">
+                            <input type="text" className="my-input" />
+                            <label className="my-placeholder">Ваше имя</label>    
+                        </div>
+                    </form> 
                     <Form>
                         <Form.Group>
                             <Form.Control type="text" placeholder="Ваше имя" />
