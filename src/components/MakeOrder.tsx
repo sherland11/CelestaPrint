@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 export default function MakeOrder() {
+    const [emailValue, setEmailValue] = useState<string>("")
+
     return (
         <Container className="makeOrder">
             <Row className="makeOrder__title">
@@ -12,47 +14,38 @@ export default function MakeOrder() {
             <Row className="makeOrder__form">
                 <Col sm="12">
                     <form className="my-form">
-                        <div className="input-group">
-                            <input type="text" className="my-input" />
-                            <label className="my-placeholder">Ваше имя</label>    
+                        <div className="makeOrder__form-group">
+                            <input type="text" className="makeOrder__form-input" required />
+                            <label className="makeOrder__form-placeholder">Ваше имя</label>    
                         </div>
+                        <div className="makeOrder__form-group">
+                            <input type="email" className="makeOrder__form-input"  value={emailValue} onChange={(e) => setEmailValue(e.target.value)} required />
+                            <label className={emailValue.length > 0 ? "makeOrder__form-placeholder makeOrder__form-placeholder_emailEnable" : "makeOrder__form-placeholder"} >Ваш email</label>
+                        </div>
+
+                        <div className="makeOrder__form-group">
+                            <textarea className="makeOrder__form-input" required />
+                            <label className="makeOrder__form-placeholder">Комментарий к заказу</label>
+                        </div>
+
+                        <label htmlFor="makeOrder__file-btn" className="makeOrder__file-title-label">Загрузите файл</label>
+                        <br />
+                        <input type="button" className="makeOrder__file-btn" id="makeOrder__file-btn" value="загрузить файл" />
+
+                        <div className="makeOrder__radio-group">
+                            <div className="makeOrder__file-title-label">Доставка заказа</div>
+                            <input type="radio" className="makeOrder__radio mb-2" value="без" name="deliveryRadio" id="radio1" />
+                            <label htmlFor="radio1" className="makeOrder__radio-label">Без доставки</label>
+                            <br />
+                            <input type="radio" className="makeOrder__radio mb-2" value="МКАД" name="deliveryRadio" id="radio2" />
+                            <label htmlFor="radio2" className="makeOrder__radio-label">Доставка внутри МКАД (400р) = 400</label>
+                            <br />
+                            <input type="radio" className="makeOrder__radio" value="ЗаМКАД" name="deliveryRadio" id="radio3" />
+                            <label htmlFor="radio3" className="makeOrder__radio-label">Доставка за пределы МКАД (600р) = 600</label>
+                        </div>
+
+                        <input type="submit" className="makeOrder__submit" value="Сделать заказ" />
                     </form> 
-                    <Form>
-                        <Form.Group>
-                            <Form.Control type="text" placeholder="Ваше имя" />
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Control type="email" placeholder="Ваш email" />
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Control as="textarea" rows={1} placeholder="Комментарий к заказу" />
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label className="mb-3">Загрузите файл</Form.Label>
-                            <Form.Control as="button" type="button" className="makeOrder__file-btn">загрузить файл</Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label className="mb-4">Доставка заказа</Form.Label>
-                            <Form.Check 
-                                type="radio"
-                                label="Без доставки"
-                                name="deliveryRadio"
-                                className="mb-1"
-                            />
-                            <Form.Check 
-                                type="radio"
-                                label="Доставка внутри МКАД (400р) = 400"
-                                name="deliveryRadio"
-                                className="mb-1"
-                            />
-                            <Form.Check 
-                                type="radio"
-                                label="Доставка за пределы МКАД (600р) = 600"
-                                name="deliveryRadio"
-                            />
-                        </Form.Group>
-                        <Button type="submit" className="makeOrder__submit">Сделать заказ</Button>
-                    </Form>
                 </Col>
             </Row>
         </Container>
