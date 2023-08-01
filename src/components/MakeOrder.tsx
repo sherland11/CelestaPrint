@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function MakeOrder() {
     const [emailValue, setEmailValue] = useState<string>("")
@@ -34,10 +34,10 @@ export default function MakeOrder() {
 
                         <div className="makeOrder__radio-group">
                             <div className="makeOrder__file-title-label">Доставка заказа</div>
-                            <input type="radio" className="makeOrder__radio mb-2" value="без" name="deliveryRadio" id="radio1" />
+                            <input type="radio" className="makeOrder__radio" value="без" name="deliveryRadio" id="radio1" />
                             <label htmlFor="radio1" className="makeOrder__radio-label">Без доставки</label>
                             <br />
-                            <input type="radio" className="makeOrder__radio mb-2" value="МКАД" name="deliveryRadio" id="radio2" />
+                            <input type="radio" className="makeOrder__radio" value="МКАД" name="deliveryRadio" id="radio2" />
                             <label htmlFor="radio2" className="makeOrder__radio-label">Доставка внутри МКАД (400р) = 400</label>
                             <br />
                             <input type="radio" className="makeOrder__radio" value="ЗаМКАД" name="deliveryRadio" id="radio3" />
