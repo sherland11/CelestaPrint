@@ -11,7 +11,7 @@ export default function Example() {
     const [showModal6, setShowModal6] = React.useState(false)
 
     return (
-        <Container className='example'>
+        <Container className='example' id='example'>
             <Row className='example__title'>
                 <Col sm='12' className='caption'>НАШИ РАБОТЫ</Col>
                 <Col sm='12' className='desc'>Следите за нашей лентой <a href="vk.com">ВКонтакте</a>. Мы публикуем свежие работы и новости</Col>

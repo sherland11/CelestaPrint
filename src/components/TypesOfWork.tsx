@@ -125,7 +125,7 @@ export default function TypeOfWork() {
             </Row>
             <Row className='typeOfWork__order'>
                 <Col sm='12' className='typeOfWork__button'>
-                    <button>Сделать заказ</button>
+                    <a href='#makeOrder'>Сделать заказ</a>
                 </Col>
             </Row>
         </Container>

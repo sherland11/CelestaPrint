@@ -14,7 +14,7 @@ export default function Header() {
                             <Nav className='header__nav'>
                                 <Nav.Link href='#price'>Цены</Nav.Link>
                                 <Nav.Link href='#example'>Примеры</Nav.Link>
-                                <Nav.Link href='#requirements'>Требования к макетам</Nav.Link>
+                                <Nav.Link href='#conditions'>Требования к макетам</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -28,7 +28,7 @@ export default function Header() {
                     </ul>
                 </Col>
                 <Col className="header__button align-self-center" sm='2'>
-                    <button>Оформить заказ</button>
+                    <a href='#makeOrder'>Оформить заказ</a>
                 </Col>
             </Row>
             <Row className='header__text'>

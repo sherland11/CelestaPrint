@@ -4,7 +4,7 @@ import { Check } from "react-bootstrap-icons"
 
 export default function Conditions() {
     return (
-        <Container className="conditions">
+        <Container className="conditions" id="conditions">
             <Row className="conditions__title">
                 <Col sm='12' className="caption">Условия работы</Col>
             </Row>

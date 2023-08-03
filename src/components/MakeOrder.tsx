@@ -5,7 +5,7 @@ export default function MakeOrder() {
     const [emailValue, setEmailValue] = useState<string>("")
 
     return (
-        <Container className="makeOrder">
+        <Container className="makeOrder" id="makeOrder">
             <Row className="makeOrder__title">
                 <Col className="caption" sm="12">СДЕЛАЙТЕ ЗАКАЗ</Col>
                 <Col className="desc" sm="8">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа.</Col>
@@ -28,17 +28,19 @@ export default function MakeOrder() {
                             <label className="makeOrder__form-placeholder">Комментарий к заказу</label>
                         </div>
 
-                        <label htmlFor="makeOrder__file-btn" className="makeOrder__file-title-label">Загрузите файл</label>
-                        <br />
-                        <input type="button" className="makeOrder__file-btn" id="makeOrder__file-btn" value="загрузить файл" />
+                        <label className="input-file makeOrder__title-label">Загрузите файл
+                            <br />
+                            <input type="file" name="file" />
+                            <span className="input-file-btn">загрузить файл</span>
+                        </label>
 
                         <div className="makeOrder__radio-group">
-                            <div className="makeOrder__file-title-label">Доставка заказа</div>
+                            <div className="makeOrder__title-label mb-3">Доставка заказа</div>
                             <input type="radio" className="makeOrder__radio" value="без" name="deliveryRadio" id="radio1" />
-                            <label htmlFor="radio1" className="makeOrder__radio-label">Без доставки</label>
+                            <label htmlFor="radio1" className="makeOrder__radio-label mb-2">Без доставки</label>
                             <br />
                             <input type="radio" className="makeOrder__radio" value="МКАД" name="deliveryRadio" id="radio2" />
-                            <label htmlFor="radio2" className="makeOrder__radio-label">Доставка внутри МКАД (400р) = 400</label>
+                            <label htmlFor="radio2" className="makeOrder__radio-label mb-2">Доставка внутри МКАД (400р) = 400</label>
                             <br />
                             <input type="radio" className="makeOrder__radio" value="ЗаМКАД" name="deliveryRadio" id="radio3" />
                             <label htmlFor="radio3" className="makeOrder__radio-label">Доставка за пределы МКАД (600р) = 600</label>

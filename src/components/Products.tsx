@@ -10,7 +10,7 @@ export default function Products() {
                 <Col sm='12' className="desc">У нас широкий спектр задач, от визиток до подарочных изданий</Col>
             </Row>
             <Row className="products__content">
-                <Col sm='3'><Products_icons title='Книги' image='images/products-icons/icon_1.svg'></Products_icons></Col>
+                <Col sm='3' className="mb-5"><Products_icons title='Книги' image='images/products-icons/icon_1.svg'></Products_icons></Col>
                 <Col sm='3'><Products_icons title='Брошюры' image='images/products-icons/icon_2.svg'></Products_icons></Col>
                 <Col sm='3'><Products_icons title='Альбомы' image='images/products-icons/icon_3.svg'></Products_icons></Col>
                 <Col sm='3'><Products_icons title='Листовки' image='images/products-icons/icon_4.svg'></Products_icons></Col>

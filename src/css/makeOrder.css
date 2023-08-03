@@ -77,26 +77,51 @@ textarea {
     max-width: 65%;
 }
 
-.makeOrder__file-btn,
-.makeOrder__submit {
-    box-shadow: none !important;
-    border-color: #ffffff !important;
-}
-
-.makeOrder__file-btn {
-    width: 175px;
-    height: 38px;
-    border-radius: 0;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    box-shadow: none;
-    border: 1px solid #ffffff;
-}
-
-.makeOrder__file-title-label {
+.makeOrder__title-label {
     font-size: 20px;
     font-weight: 300;
-    margin: 10px 0 10px 0;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 16px;
+    font-weight: 500;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #ffffff;
+	line-height: 22px;
+    width: 175px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+    margin: 10px 0 30px 0;
+	transition: box-shadow 0.4s ease;
+}
+.input-file-text {
+	padding: 0 10px;
+	line-height: 40px;
+	display: inline-block;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.input-file:hover .input-file-btn {
+    box-shadow: 0 0 5px #cccccc;
 }
 
 .makeOrder__radio-label {
@@ -129,15 +154,21 @@ textarea {
 	height: 18px;
 	position: absolute;
 	left: 0;
-	bottom: 1px;
+	bottom: 0px;
 	background: url("../img/radio.svg") no-repeat center;
     background-size: 18px;
+    opacity: 0.6;
+    transition: opacity 0.4s ease;
+}
+
+.makeOrder__radio-group label:hover:before {
+	opacity: 1;
 }
 
 .makeOrder__radio-group input[type=radio]:checked + label:before {
-
 	background: url("../img/radio-check.svg") no-repeat center;
     background-size: 18px;
+    opacity: 1;
 }
 
 .makeOrder__radio-group label:hover:before {
