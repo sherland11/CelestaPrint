@@ -26,6 +26,11 @@ export default function Map() {
                     Проход в арку со стороны Златоустинского, сразу за магазином ковров Алибаба.
                   </p>
                 </div>
+                <div className="map__card-media">
+                  <a href="x.com"><img src="images/social-network/twitter.svg" alt="twitter" /></a>
+                  <a href="t.me"><img src="images/social-network/telegram.svg" alt="telegram" /></a>
+                  <a href="vk.com"><img src="images/social-network/vk.svg" alt="vk" /></a>
+                </div>
               </Col>
             </Row>
             <Row className="map__content">

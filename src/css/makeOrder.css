@@ -18,7 +18,11 @@
     line-height: 20px;
 }
 
-.my-form {
+.makeOrder__form-container {
+    width: 90%;
+}
+
+.makeOrder__form {
     max-width: 90%;
 }
 
@@ -67,10 +71,6 @@ textarea {
 .makeOrder__form-placeholder_emailEnable {
     font-size: 10px;
     top: 10px;
-}
-
-.makeOrder__form {
-    width: 90%;
 }
 
 .form-control {

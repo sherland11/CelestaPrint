@@ -29,6 +29,9 @@
     height: 400px;
     background: #ffffff;
     padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .map__card-title {
@@ -47,4 +50,9 @@
     font-weight: 300;
     color: #989898;
     line-height: 25px;
+}
+
+.map__card-media a img {
+    width: 25px;
+    height: 25px;
 }

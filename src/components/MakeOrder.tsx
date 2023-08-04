@@ -8,12 +8,12 @@ export default function MakeOrder() {
         <Container className="makeOrder" id="makeOrder">
             <Row className="makeOrder__title">
                 <Col className="caption" sm="12">СДЕЛАЙТЕ ЗАКАЗ</Col>
-                <Col className="desc" sm="8">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа.</Col>
+                <Col className="desc" sm="8">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа. Цена формируется индивидуально, в зависимости от сложности заказа</Col>
             </Row>
 
-            <Row className="makeOrder__form">
+            <Row className="makeOrder__form-container">
                 <Col sm="12">
-                    <form className="my-form">
+                    <form className="makeOrder__form">
                         <div className="makeOrder__form-group">
                             <input type="text" className="makeOrder__form-input" required />
                             <label className="makeOrder__form-placeholder">Ваше имя</label>    

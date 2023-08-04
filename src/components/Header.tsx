@@ -12,7 +12,7 @@ export default function Header() {
                         <Navbar.Toggle aria-controls="navbar-nav" />
                         <Navbar.Collapse id="navbar-nav">
                             <Nav className='header__nav'>
-                                <Nav.Link href='#price'>Цены</Nav.Link>
+                                <Nav.Link href='#makeOrder'>Цены</Nav.Link>
                                 <Nav.Link href='#example'>Примеры</Nav.Link>
                                 <Nav.Link href='#conditions'>Требования к макетам</Nav.Link>
                             </Nav>
