@@ -8,7 +8,7 @@ export default function MakeOrder() {
         <Container className="makeOrder" id="makeOrder">
             <Row className="makeOrder__title">
                 <Col className="caption" sm="12">СДЕЛАЙТЕ ЗАКАЗ</Col>
-                <Col className="desc" sm="8">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа. Цена формируется индивидуально, в зависимости от сложности заказа</Col>
+                <Col className="desc" sm="8">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа. Цена формируется индивидуально, в зависимости от сложности заказа.</Col>
             </Row>
 
             <Row className="makeOrder__form-container">
@@ -19,7 +19,7 @@ export default function MakeOrder() {
                             <label className="makeOrder__form-placeholder">Ваше имя</label>    
                         </div>
                         <div className="makeOrder__form-group">
-                            <input type="email" className="makeOrder__form-input"  value={emailValue} onChange={(e) => setEmailValue(e.target.value)} required />
+                            <input type="email" className="makeOrder__form-input" onChange={(e) => setEmailValue(e.target.value)} required />
                             <label className={emailValue.length > 0 ? "makeOrder__form-placeholder makeOrder__form-placeholder_emailEnable" : "makeOrder__form-placeholder"} >Ваш email</label>
                         </div>
 

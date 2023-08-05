@@ -52,6 +52,10 @@
     line-height: 25px;
 }
 
+.map__card-media a {
+    margin-right: 10px;
+}
+
 .map__card-media a img {
     width: 25px;
     height: 25px;
