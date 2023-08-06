@@ -3,7 +3,6 @@ import './index.css';
 import './css/rest.css';
 import './css/header.css';
 import './css/products.css';
-import './css/products_icons.css';
 import './css/typeOfWork.css';
 import './css/conditions.css';
 import './css/example.css';

@@ -32,7 +32,7 @@ export default function Header() {
                 </Col>
             </Row>
             <Row className='header__text'>
-                <Col sm='7' className='header__text__title mb-5'>ТИПОГРАФИЯ ПОЛНОГО ЦИКЛА</Col>
+                <Col md='7' sm='12' className='header__text__title mb-5'>ТИПОГРАФИЯ ПОЛНОГО ЦИКЛА</Col>
                 <Col sm='10' className='header__text__desc'>Мы специализируемся на печати книг, брошюр и альбомов. Мы следим за качеством технического оснащения типографии, выполняем все стадии печатных работ.</Col>
             </Row>
         </Container>

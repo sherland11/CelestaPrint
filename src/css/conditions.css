@@ -11,12 +11,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 90%;
+    width: 90%;
     min-height: 275px;
 }
 
 .conditions__requirements {
-    min-width: 90%;
+    width: 90%;
 }
 
 .conditions__requirements_title {
@@ -32,10 +32,31 @@
 .conditions__check {
     display: flex;
     align-items: center;
-    min-width: 90%;
+    width: 90%;
     min-height: 300px;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 992px) {
+    .conditions__check {
+        margin: 75px 0;
+    }
+}
+
+@media (max-width:500px) {
+    .conditions__check {
+        font-size: 14px;
+    }
+}
+
+.conditions__check li {
+    display: flex;
+    align-items: center;
+}
+
+.conditions__check svg:not(:root) {
+    overflow: visible;
 }
 
 .conditions_icon {

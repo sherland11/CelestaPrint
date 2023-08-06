@@ -16,14 +16,14 @@ export default function Conditions() {
                 </Col>
             </Row>
             <Row className="conditions__check">
-                <Col sm='5'>
+                <Col lg='5' sm='12' className="p-0">
                     <ul>
                         <li><Check size='65' className="conditions_icon"  ></Check>Форматы - pdf, tiff, Ai, SVG</li>
                         <li><Check size='65' className="conditions_icon"></Check>Разрешение (для растра) - 300 dpi</li>
                         <li><Check size='65' className="conditions_icon"></Check>Цветность - CMYK (100% black)</li>
                     </ul>
                 </Col>
-                <Col sm='6'>
+                <Col lg='7' sm='12' className="p-0">
                     <ul>
                         <li><Check size='65' className="conditions_icon"></Check>Вылеты - 5мм</li>
                         <li><Check size='65' className="conditions_icon"></Check>Макет блока - постраничный вид</li>
