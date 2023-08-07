@@ -16,9 +16,21 @@
     min-height: 310px;
 }
 
+@media (max-width:768px) {
+    .typeOfWork__title {
+        width: 95%;
+    }
+}
+
 .typeOfWork__content {
     width: 90%;
     margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .typeOfWork__content {
+        width: 95%;
+    }
 }
 
 .accordion-item {
@@ -145,8 +157,8 @@
     box-shadow: 0 0 5px #cccccc;
 }
 
-@media (max-width:767px) {
-    .typeOfWork__button button {
+@media (max-width:350px) {
+    .typeOfWork__button a {
         width: 200px;
     }
 }

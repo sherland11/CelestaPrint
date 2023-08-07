@@ -75,7 +75,7 @@ export default function Example() {
             </Row>
 
             <Row className="example__machine d-flex justify-content-center">
-                <Col sm='8' className='example__machine_text'>
+                <Col sm='8' className='example__machine-text'>
                     Мы работаем с 2005 года. С тех пор мы научились работать и с небольшими, и с крупными заказами. Мы всегда следим за качеством оборудования: в нашей типографии есть 
                     <a href="https://www.wikipedia.org/"> офсетная машина Heidelberg SM 74-5, </a> 
                     <a href="https://www.wikipedia.org/">офсетная машина Heidelberg PM 74-4, </a> 

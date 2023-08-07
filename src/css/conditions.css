@@ -15,8 +15,20 @@
     min-height: 275px;
 }
 
+@media (max-width: 768px) {
+    .conditions__title {
+        width: 95%;
+    }
+}
+
 .conditions__requirements {
     width: 90%;
+}
+
+@media (max-width: 768px) {
+    .conditions__requirements {
+        width: 95%;
+    }
 }
 
 .conditions__requirements_title {
@@ -44,6 +56,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .conditions__check {
+        width: 95%;
+    }
+}
+
 @media (max-width:500px) {
     .conditions__check {
         font-size: 14px;
@@ -64,9 +82,15 @@
 }
 
 .conditions__delivery {
-    max-width: 90%;
+    width: 90%;
     margin-top: 30px;
     margin-bottom: 135px;
+}
+
+@media (max-width:768px) {
+    .conditions__delivery {
+        width: 95%;
+    }
 }
 
 .conditions__delivery_title {

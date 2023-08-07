@@ -64,10 +64,16 @@
 }
 
 .header__text {
-    max-width: 90%;
+    width: 90%;
     margin: 200px auto 0 auto;
     color: #000;
     padding-bottom: 150px;
+}
+
+@media (max-width:768px) {
+    .header__text {
+        width: 95%;
+    }
 }
 
 .header__text__title {

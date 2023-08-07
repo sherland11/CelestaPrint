@@ -15,6 +15,12 @@
     color: #000;
 }
 
+@media (max-width:768px) {
+    .products__title {
+        width: 95%;
+    }
+}
+
 .products__content {
     width: 70%;
     margin-bottom: 120px;

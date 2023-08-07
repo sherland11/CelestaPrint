@@ -188,6 +188,13 @@ textarea {
     border: 1px solid #ffffff;
 }
 
+@media (max-width:768px) {
+    .makeOrder__submit {
+        width: 90%;
+        margin: 0;
+    }
+}
+
 .makeOrder__submit:hover {
     background-color: #ffffff;
     color: #000000;
