@@ -8,7 +8,7 @@ export default function MakeOrder() {
         <Container className="makeOrder" id="makeOrder">
             <Row className="makeOrder__title">
                 <Col className="caption" sm="12">СДЕЛАЙТЕ ЗАКАЗ</Col>
-                <Col className="desc" sm="8">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа. Цена формируется индивидуально, в зависимости от сложности заказа.</Col>
+                <Col className="desc" sm="12">Отправьте контакты, информацию о своем заказе и загрузите макет. Мы свяжемся с вами для подтверждения и уточнения деталей заказа. Цена формируется индивидуально, в зависимости от сложности заказа.</Col>
             </Row>
 
             <Row className="makeOrder__form-container">

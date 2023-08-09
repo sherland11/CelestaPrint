@@ -6,6 +6,12 @@
     color: #000000;
 }
 
+@media (max-width:992px) {
+    .map {
+        height: auto;
+    }
+}
+
 .map__content {
     min-width: 100%;
     padding: 0;
@@ -17,12 +23,21 @@
 }
 
 .map__card {
-    max-width: 40%;
+    width: 40%;
     position: relative;
     left: 10%;
     top: 17.5%;
     z-index: 100000;
     height: 0px;
+}
+
+@media (max-width:992px) {
+    .map__card {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 45px auto;
+    }
 }
 
 .map__card-text {
@@ -32,6 +47,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width:1200px) {
+    .map__card-text {
+        padding: 40px;
+    }
+}
+
+@media (max-width:992px) {
+    .map__card-text {
+        padding: 0;
+        justify-content: start;
+        height: auto;
+    }
 }
 
 .map__card-title {
@@ -49,7 +78,19 @@
     font-size: 18px;
     font-weight: 300;
     color: #989898;
-    line-height: 25px;
+    line-height: 25px;  
+}
+
+@media (max-width:1200px) {
+    .map__card-route {
+        line-height: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    .map__card-media {
+        margin-top: 30px;
+    }
 }
 
 .map__card-media a {

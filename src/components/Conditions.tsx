@@ -33,7 +33,7 @@ export default function Conditions() {
             </Row>
             <Row className="conditions__delivery">
                 <Col className="conditions__delivery_title" sm='12'>УСЛОВИЯ ДОСТАВКИ ТИРАЖЕЙ И ИЗДЕЛИЙ</Col>
-                <Col className="conditions__delivery_desc" sm='6'>
+                <Col className="conditions__delivery_desc" sm='12'>
                     Мы выполняем доставку по Москве и в другие города. Доставка внутри Садового кольца — 400р. 
                     В пределах МКАД — 600р. Доставка в другие города — от 1500р.
                 </Col>

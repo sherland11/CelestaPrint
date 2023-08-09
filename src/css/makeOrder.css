@@ -14,6 +14,12 @@
     margin: 210px 0 90px 0;
 }
 
+@media (max-width:768px) {
+    .makeOrder__title {
+        width: 95%
+    }
+}
+
 .makeOrder__title .desc {
     line-height: 20px;
 }
@@ -22,16 +28,27 @@
     width: 90%;
 }
 
+@media (max-width:768px) {
+    .makeOrder__form-container {
+        width: 95%
+    }
+}
+
 .makeOrder__form {
-    max-width: 90%;
+    width: 90%;
+}
+
+@media (max-width:768px) {
+    .makeOrder__form {
+        width: 100%
+    }
 }
 
 .makeOrder__form-group {
     position: relative;
     height: 85px;
 }
-.makeOrder__form-input, 
-textarea {
+.makeOrder__form-input {
     width: 80%;
     height: 60px;
     padding: 15px 10px 0 10px;
@@ -41,7 +58,13 @@ textarea {
     margin-bottom: 10px;
 }
 
-textarea {
+@media (max-width:768px) {
+    .makeOrder__form-input {
+        width: 100%
+    }
+}
+
+.makeOrder__form-group textarea {
     resize: none;
     padding: 30px 10px 0 10px !important;
 }
@@ -71,10 +94,6 @@ textarea {
 .makeOrder__form-placeholder_emailEnable {
     font-size: 10px;
     top: 10px;
-}
-
-.form-control {
-    max-width: 65%;
 }
 
 .makeOrder__title-label {
@@ -190,8 +209,8 @@ textarea {
 
 @media (max-width:768px) {
     .makeOrder__submit {
-        width: 90%;
-        margin: 0;
+        width: 70%;
+        margin: 50px 15% 0 15%;
     }
 }
 

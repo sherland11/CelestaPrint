@@ -10,7 +10,7 @@ export default function TypeOfWork() {
             </Row>
             <Row className="typeOfWork__content">
                 <Col sm='12'>
-                    <Accordion flush>
+                    <Accordion flush alwaysOpen>
                         <Accordion.Item eventKey='0'>
                             <Accordion.Header>Допечатная подготовка</Accordion.Header>
                             <Accordion.Body>
