@@ -39,6 +39,7 @@
 @media (max-width:768px) {
     .header__title {
         text-align: start;
+        width: 200px;
     }
 }
 
@@ -92,16 +93,20 @@
     }
 }
 
+
+.header__burger-btn {
+    position: absolute;
+    left: 85%;
+}
+
+.header__burger-btn img {
+    cursor: pointer;
+    height: 28px;
+}
+
 @media (min-width:768px) {
     .header__burger-btn {
         display: none;
-    }
-}
-
-@media (max-width:768px) {
-    .header__burger-btn {
-        display: flex;
-        justify-content: flex-end;
     }
 }
 
