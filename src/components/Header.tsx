@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Navbar, Nav,  } from 'react-bootstrap'
+import Burger from './Burger'
+import '../css/burger.css'
 
 export default function Header() {
 
@@ -38,7 +40,7 @@ export default function Header() {
                     <a href='#makeOrder'>Оформить заказ</a>
                 </Col>
 
-                <Col className='header__burger-btn' sm="8"><img src="images/burger-button.svg" alt="Кнопка открытия меню" onClick={() => setOpenBurger(true)} /></Col>
+                <Col className='header__burger-btn' sm="8"><img src="images/burger-button.svg" alt="Кнопка открытия меню" onClick={() => setOpenBurger(!openBurger)} /></Col>
             </Row>
 
             <Row className='header__text'>
@@ -48,7 +50,7 @@ export default function Header() {
                 </Col>
             </Row>
 
-            <div className={openBurger ? "header__burger header__burger_show" : "header__burger"}></div>
+            <div className={openBurger ? "header__burger header__burger_show" : "header__burger"}><Burger setOpenBurger={setOpenBurger}></Burger></div>
         
         </Container>
     )

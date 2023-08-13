@@ -12,6 +12,12 @@
 }
 
 @media (max-width:768px) {
+    .header__content {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:768px) {
     .header__navbar {
         display: none;
     }
@@ -96,7 +102,7 @@
 
 .header__burger-btn {
     position: absolute;
-    left: 85%;
+    left: 80%;
 }
 
 .header__burger-btn img {
@@ -140,4 +146,20 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
+}
+
+
+.header__burger {
+    transform: translateX(300%);
+    transition: transform 0.4s ease;
+    width: 70vw;
+    height: 100vh;
+    background-color: #cccccc;
+    position: fixed;
+    right: 0;
+    z-index: 1000000000;
+}
+
+.header__burger.header__burger_show {
+    transform: translateX(0%);
 }
