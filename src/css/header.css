@@ -7,13 +7,18 @@
 }
 
 .header__content {
-    min-width: 99%;
+    width: 99%;
     padding-top: 35px; 
 }
 
 @media (max-width:768px) {
     .header__content {
-        padding-top: 10px;
+        position: fixed;
+        top: 0;
+        padding: 20px;
+        width: 100%;
+        background-color: #fff352;
+        z-index: 10000000;
     }
 }
 
@@ -102,7 +107,7 @@
 
 .header__burger-btn {
     position: absolute;
-    left: 80%;
+    left: 85%;
 }
 
 .header__burger-btn img {
@@ -151,15 +156,15 @@
 
 .header__burger {
     transform: translateX(300%);
-    transition: transform 0.4s ease;
-    width: 70vw;
+    transition: transform 0.6s ease;
+    width: 100vw;
     height: 100vh;
-    background-color: #cccccc;
+    background-color: #fff352;
     position: fixed;
     right: 0;
     z-index: 1000000000;
 }
 
-.header__burger.header__burger_show {
+.header__burger_show {
     transform: translateX(0%);
 }
