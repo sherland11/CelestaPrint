@@ -80,6 +80,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    max-height: 100%;
 }
 
 
@@ -94,13 +95,13 @@
     z-index: 100000;
 }
 
-.example__modal_body_image {
+.example__modal-body-image {
     max-height: 97%;
     max-width: 100%;
     cursor: zoom-in;
 }
 
-.example__modal_body_zoom {
+.example__modal-body-zoom {
     position:fixed;
     right: 75px;
     top: 20px;
@@ -172,4 +173,8 @@
 .example__machine-text a {
     text-decoration: none;
     color: #ff8562;
+}
+
+.show {
+    z-index: 10000000;
 }

@@ -14,7 +14,7 @@ export default function Map() {
     }
 
     return (
-        <Container className="map">
+        <Container className="map" id="contacts">
           <Row className="map__card">
               <Col sm="12" className="map__card-text">
                 <div>

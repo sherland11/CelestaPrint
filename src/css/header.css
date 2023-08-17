@@ -107,12 +107,12 @@
 
 .header__burger-btn {
     position: absolute;
-    left: 85%;
+    left: 82%;
 }
 
 .header__burger-btn img {
     cursor: pointer;
-    height: 28px;
+    height: 36px;
 }
 
 @media (min-width:768px) {

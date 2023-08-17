@@ -2,15 +2,23 @@ import React, { useState } from 'react'
 import { Container, Row, Col, Navbar, Nav,  } from 'react-bootstrap'
 import Burger from './Burger'
 import '../css/burger.css'
+import { useShowModal } from '../hooks/showModal'
 
 export default function Header() {
 
     const [openBurger, setOpenBurger] = useState<boolean>(false)
+    const { showModal1, 
+        showModal2, 
+        showModal3, 
+        showModal4, 
+        showModal5, 
+        showModal6, 
+    } = useShowModal()
 
     return (
         <Container className='header container'>
             
-            <Row className='header__content'>
+            <Row className={showModal1 || showModal2 || showModal3 || showModal4 || showModal5 || showModal6 ? "header__content d-none" : "header__content"}>
                 <Col className='header__navbar' sm='4'>
                     <Navbar className="">
                         <Container fluid>
@@ -19,7 +27,7 @@ export default function Header() {
                                 <Nav className='header__nav'>
                                     <Nav.Link href='#makeOrder'>Цены</Nav.Link>
                                     <Nav.Link href='#example'>Примеры</Nav.Link>
-                                    <Nav.Link href='#conditions'>Требования к макетам</Nav.Link>
+                                    <Nav.Link href='#conditions'>Требования</Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

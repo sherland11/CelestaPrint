@@ -38,7 +38,9 @@
         position: static;
         width: 90%;
         height: auto;
-        margin: 45px auto;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        margin: 0 auto;
     }
 }
 
