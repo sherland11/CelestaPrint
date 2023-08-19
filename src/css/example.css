@@ -30,44 +30,43 @@
 }
 
 .example__content {
-    width: 99%;
+    width: 100%;
+    height: 200vh;
+}
+
+@media (max-width:1200px) {
+    .example__content {
+        height: 175vh;
+    }
+}
+
+@media (max-width:992px) {
+    .example__content {
+        height: 125vh;
+    }
 }
 
 @media (max-width:768px) {
     .example__content {
-        width: 100%;
+        height: 90vh;
     }
 }
 
 .example__content .col-8,
 .example__content .col-4 {
     padding: 0 5px 10px 5px;
+    height: 33.3%;
 }
 
 .example__modalBtn {
-    position: relative;
-	height: 0;
+    height: 100%;
 }
 
-.example__modalBtn img {
+.example__modalBtn-image {
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-}
-
-.example__modalBtn_65_percent {
-    padding-bottom: 66%;
-}
-
-.example__modalBtn_133_percent {
-    padding-bottom: 133%;
-}
-
-.example__modalBtn_image {
-    position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .modal-header {

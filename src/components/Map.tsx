@@ -27,9 +27,9 @@ export default function Map() {
                   </p>
                 </div>
                 <div className="map__card-media">
-                  <a href="x.com"><img src="images/social-network/twitter.svg" alt="twitter" /></a>
-                  <a href="t.me"><img src="images/social-network/telegram.svg" alt="telegram" /></a>
-                  <a href="vk.com"><img src="images/social-network/vk.svg" alt="vk" /></a>
+                  <a href="https://x.com" rel="noreferrer" target="_blank"><img src="images/social-network/twitter.svg" alt="twitter" /></a>
+                  <a href="https://t.me" rel="noreferrer" target="_blank"><img src="images/social-network/telegram.svg" alt="telegram" /></a>
+                  <a href="https://vk.com/" rel="noreferrer" target="_blank"><img src="images/social-network/vk.svg" alt="vk" /></a>
                 </div>
               </Col>
             </Row>
