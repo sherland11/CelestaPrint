@@ -8,7 +8,7 @@ export default function Burger({ setOpenBurger }: Props) {
 
     return (
         <div className="burger">
-            <div className="burger__title">pallete_print</div>
+            <div className="burger__title">CelestaPrint</div>
             <img className="burger__close-btn" src="images/close-btn.svg" alt="Close button" onClick={() => setOpenBurger(false)} />
             <nav className="burger__nav">
                 <ul>

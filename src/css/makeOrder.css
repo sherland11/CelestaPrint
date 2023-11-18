@@ -207,6 +207,11 @@
     font-size: 16px;
     font-weight: 700;
     border: 1px solid var(--input-color);
+    transition: all 0.6s ease;
+}
+
+.makeOrder__submit:hover {
+    box-shadow: 0 0 5px var(--shadow-color);
 }
 
 @media (max-width:768px) {
