@@ -3,9 +3,9 @@
     flex-direction: column;
     align-items: center;
     min-width: 100%;
-    background-color: #fff352;
+    background-color: var(--main-color);
     font-family: 'Open Sans', sans-serif;
-    color: #000000;
+    color: var(--text-color);
     padding-bottom: 105px;
 }
 
@@ -53,7 +53,7 @@
     height: 60px;
     padding: 15px 10px 0 10px;
     outline: none;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--input-color);
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -75,13 +75,12 @@
     left: 10px;
     font-size: 16px;
     padding: 0px 5px;
-    color: #666;
+    color: var(--placeholder-color);
     transition: 0.3s ease-out;
     pointer-events: none;
 }
 
-.makeOrder__form-input:focus + .makeOrder__form-placeholder
-{
+.makeOrder__form-input:focus + .makeOrder__form-placeholder {
     font-size: 10px;
     top: 10px;
 }
@@ -105,6 +104,7 @@
 	position: relative;
 	display: inline-block;
 }
+
 .input-file-btn {
 	position: relative;
 	display: inline-block;
@@ -115,7 +115,7 @@
     font-weight: 500;
 	vertical-align: middle;
 	text-align: center;
-	background-color: #ffffff;
+	background-color: var(--input-color);
 	line-height: 22px;
     width: 175px;
 	height: 40px;
@@ -125,11 +125,13 @@
     margin: 10px 0 30px 0;
 	transition: box-shadow 0.4s ease;
 }
+
 .input-file-text {
 	padding: 0 10px;
 	line-height: 40px;
 	display: inline-block;
 }
+
 .input-file input[type=file] {
 	position: absolute;
 	z-index: -1;
@@ -140,7 +142,7 @@
 }
 
 .input-file:hover .input-file-btn {
-    box-shadow: 0 0 5px #cccccc;
+    box-shadow: 0 0 5px var(--shadow-color);
 }
 
 .makeOrder__radio-label {
@@ -200,11 +202,11 @@
     width: 240px;
     height: 60px;
     border-radius: 0;
-    background-color: #ffffff;
+    background-color: var(--input-color);
     color: #000000;
     font-size: 16px;
     font-weight: 700;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--input-color);
 }
 
 @media (max-width:768px) {
@@ -215,6 +217,6 @@
 }
 
 .makeOrder__submit:hover {
-    background-color: #ffffff;
+    background-color: var(--input-color);
     color: #000000;
 }

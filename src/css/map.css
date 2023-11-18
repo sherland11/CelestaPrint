@@ -3,7 +3,7 @@
     padding: 0;
     height: 600px;
     font-family: 'Open Sans', sans-serif;
-    color: #000000;
+    color: var(--text-color);
 }
 
 @media (max-width:992px) {
@@ -46,7 +46,7 @@
 
 .map__card-text {
     height: 400px;
-    background: #ffffff;
+    background: var(--map-background-color);
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
 .map__card-route {
     font-size: 18px;
     font-weight: 300;
-    color: #989898;
+    color: var(--secondary-text-color);
     line-height: 25px;  
 }
 

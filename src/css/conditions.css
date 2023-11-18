@@ -4,7 +4,7 @@
     align-items: center;
     min-width: 100%;
     font-family: 'Open Sans', sans-serif;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .conditions__title {

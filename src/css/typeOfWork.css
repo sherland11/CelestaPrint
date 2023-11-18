@@ -4,7 +4,7 @@
     align-items: center;
     min-width: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f7f7f7;
+    background-color: var(--secondary-color);
 }
 
 .typeOfWork__title {
@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    color: #000;
+    color: var(--text-color);
     min-height: 310px;
 }
 
@@ -47,14 +47,14 @@
 .accordion-button {
     font-size: 22px;
     font-weight: 600;
-    color: #000000;
+    color: var(--text-color)000;
     margin: 10px 0;
 }
 
 .accordion-button:focus {
     box-shadow: none;
     background-color: none;
-    color: #000;
+    color: var(--text-color);
 }
 
 .accordion {
@@ -68,7 +68,7 @@
 }
 
 .accordion-button:not(.collapsed) {
-    color: #000000;
+    color: var(--text-color)000;
     box-shadow: none;
     background-color: none;
     border: none;
@@ -77,11 +77,11 @@
 .accordion-button.collapsed::after {
     background: url("../img/plus_icon_white.svg");
     background-size: 90%;
-    background-color: #fff352;
+    background-color: var(--main-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    color: #ffffff;
+    color: var(--input-color);
     background-position: center;
     transform: rotate(0);
     transition: background-color ease 400ms, transform ease 500ms;
@@ -90,11 +90,11 @@
 .accordion-button.collapsed:hover::after {
     background: url("../img/plus_icon.svg");
     background-size: 90%;
-    background-color: #ffffff;
+    background-color: var(--input-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    color: #ffffff;
+    color: var(--input-color);
     background-position: center;
     transform: rotate(0);
     transition: background-color ease 400ms, transform ease 500ms;
@@ -103,11 +103,11 @@
 .accordion-button:not(.collapsed)::after {
     background: url("../img/plus_icon_white.svg");
     background-size: 90%;
-    background-color: #fff352;
+    background-color: var(--main-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    color: #ffffff;
+    color: var(--input-color);
     background-position: center;
     transform: rotate(-45deg);
     transition: background-color ease 400ms, transform ease 500ms;
@@ -116,11 +116,11 @@
 .accordion-button:not(.collapsed):hover::after {
     background: url("../img/plus_icon.svg");
     background-size: 90%;
-    background-color: #ffffff;
+    background-color: var(--input-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    color: #ffffff;
+    color: var(--input-color);
     background-position: center;
     transform: rotate(-45deg);
     transition: background-color ease 400ms, transform ease 500ms;
@@ -146,15 +146,15 @@
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    color: #000000;
-    background-color: #fff352;
+    color: var(--text-color)000;
+    background-color: var(--main-color);
     border: none;
     box-shadow: none;
     transition: box-shadow 0.2s ease-in-out;
 }
 
 .typeOfWork__button a:hover {
-    box-shadow: 0 0 5px #cccccc;
+    box-shadow: 0 0 5px var(--shadow-color);
 }
 
 @media (max-width:350px) {

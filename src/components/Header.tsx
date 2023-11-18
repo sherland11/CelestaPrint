@@ -32,7 +32,7 @@ export default function Header() {
                     </Navbar>
                 </Col>
 
-                <Col className='header__title align-self-center' sm='4'>palette_print</Col>
+                <Col className='header__title align-self-center' sm='4'>CelestaPrint</Col>
 
                 <Col className='header__contacts' sm='2'>
                     <ul className=''>
@@ -46,15 +46,9 @@ export default function Header() {
                     <a href='#makeOrder'>Оформить заказ</a>
                 </Col>
 
-                <Col className='header__burger-btn' sm="8"><img src="images/burger-button.svg" alt="Кнопка открытия меню" onClick={() => setOpenBurger(!openBurger)} /></Col>
             </Row>
-
-            <Row className='header__text'>
-                <Col md='7' sm='12' className='header__text-title mb-5'>ТИПОГРАФИЯ ПОЛНОГО ЦИКЛА</Col>
-                <Col sm='10' className='header__text-subTitle'>
-                    Мы специализируемся на печати книг, брошюр и альбомов. Мы следим за качеством технического оснащения типографии, выполняем все стадии печатных работ.
-                </Col>
-            </Row>
+            
+            <Row className='header__burger-btn' sm="8"><img src="images/burger-button.svg" alt="Кнопка открытия меню" onClick={() => setOpenBurger(!openBurger)} /></Row>
 
             <div className={openBurger ? "header__burger header__burger_show" : "header__burger"}><Burger setOpenBurger={setOpenBurger}></Burger></div>
         

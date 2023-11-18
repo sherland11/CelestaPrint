@@ -1,7 +1,7 @@
 .clients {
     font-family: 'Open Sans', sans-serif;
     min-width: 100%;
-    color: #000000;
+    color: var(--text-color);
     margin-bottom: 150px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .clients__logo {
-    border-right: 1px solid #bebebe;
+    border-right: 1px solid var(--border-color);
 }
 
 .clients__logo6 {
@@ -33,7 +33,7 @@
     .clients__logo1,
     .clients__logo2,
     .clients__logo3 {
-        border-bottom: 1px solid #bebebe;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .clients__logo3 {
@@ -48,11 +48,11 @@
     }
 
     .clients__logo3 {
-        border-right: 1px solid #bebebe;
+        border-right: 1px solid var(--border-color);
     }
 
     .clients__logo6 {
-        border-top: 1px solid #bebebe;
+        border-top: 1px solid var(--border-color);
     }
 }
 

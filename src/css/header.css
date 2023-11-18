@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--main-color);
 }
 
 .header__content {
@@ -11,25 +12,25 @@
     padding-top: 35px; 
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .header__content {
         position: fixed;
         top: 0;
         padding: 20px;
         width: 100%;
-        background-color: #fff352;
         z-index: 10000000;
+        background-color: var(--main-color);
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .header__navbar {
         display: none;
     }
 }
 
 .nav-link {
-    color: #252525;
+    color: var(--nav-link);
     font-weight: 600;
     font-size: 16px;
     margin-right: 10px;
@@ -37,25 +38,25 @@
 }
 
 .nav-link:hover {
-    color: #000000;
+    color: var(--text-color);
 }
 
 .header__title {
-    color: #000;
+    color: var(--text-color);
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .header__title {
         text-align: start;
         width: 200px;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .header__contacts {
         display: none;
     }
@@ -99,7 +100,7 @@
     
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .header__button {
         display: none;
     }
@@ -107,8 +108,10 @@
 
 
 .header__burger-btn {
-    position: absolute;
-    left: 82%;
+    position: fixed;
+    top: 14px;
+    right: 20px;
+    z-index: 10000000;
 }
 
 .header__burger-btn img {
@@ -116,7 +119,7 @@
     height: 36px;
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .header__burger-btn {
         display: none;
     }
@@ -129,7 +132,7 @@
     padding-bottom: 150px;
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .header__text {
         width: 95%;
     }
@@ -141,7 +144,7 @@
     line-height: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .header__text-title {
         font-size: 36px;
         text-align: center;
@@ -160,7 +163,7 @@
     transition: transform 0.6s ease;
     width: 100vw;
     height: 100vh;
-    background-color: #fff352;
+    background-color: var(--main-color);
     position: fixed;
     right: 0;
     z-index: 1000000000;

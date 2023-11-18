@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    color: #000000;
+    color: var(--text-color);
     height: 100%;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .burger__nav a {
-    color: #000000;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 28px;
 }
@@ -59,7 +59,7 @@
 
 .burger__btn {
     display: inline-block;
-    color: #000000;
+    color: var(--text-color);
     background-color: #ffffff;
     width: 80%;
     height: 60px;

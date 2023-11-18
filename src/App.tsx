@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 import './css/rest.css';
 import './css/header.css';
@@ -10,6 +9,7 @@ import './css/clients.css';
 import './css/makeOrder.css';
 import './css/map.css';
 import './css/footer.css';
+import './css/banner.css'
 import Header from './components/Header';
 import Products from './components/Products';
 import TypeOfWork from './components/TypesOfWork';
@@ -19,19 +19,21 @@ import Clients from './components/Clients';
 import MakeOrder from './components/MakeOrder';
 import Map from './components/Map';
 import Footer from './components/Footer';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <div className="wrapper">
-      <Header></Header>
-      <Products></Products>
-      <TypeOfWork></TypeOfWork>
-      <Conditions></Conditions>
-      <Example></Example>
-      <Clients></Clients>
-      <MakeOrder></MakeOrder>
-      <Map></Map>
-      <Footer></Footer>
+      <Header />
+      <Banner />
+      <Products />
+      <TypeOfWork />
+      <Conditions />
+      <Example />
+      <Clients />
+      <MakeOrder />
+      <Map />
+      <Footer />
     </div>
   );
 }
